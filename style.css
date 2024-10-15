@@ -1,0 +1,278 @@
+
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(fashion\ design\ theme\ background\ with\ pink\ colored\ fabric\ or\ scissors\,\ size\ 1980\ ×\ 1080.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  filter: blur();
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+}
+
+/* From Uiverse.io by akshat-patel28 */ 
+.button-container {
+  display: flex;
+  background-color: rgba(245, 73, 144);
+  width: 200px;
+  height: 40px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+        rgba(245, 73, 144, 0.5) 5px 10px 15px;
+}
+
+.button {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.icon {
+  font-size: 20px;
+}
+
+/* Home Section */
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+}
+
+.home-content h1 {
+  font-size: 3,5vw;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.home-content h3 {
+  font-size: 2vw;
+  font-weight: 800;
+  color: #0bf9f1;
+}
+
+.home-content p {
+  font-size: 1,5vw;
+  font-weight: 700;
+  color: #F8F8FF;
+  max-width: 80%;
+}
+
+.home-content img {
+  width: 20vw;
+  height: 20vw;
+  max-width: 250px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-right: 40px;
+  
+}
+
+.text-content {
+  padding-bottom: 40px;
+}
+
+.home-content .btn-box {
+  width: 350px;
+  height: 35px;
+  display: flex;
+}
+
+
+/* From Uiverse.io by alshahwan */ 
+.tombol {
+  background-color: #fff;
+  border: 1px solid #25D366;
+  padding: 5px;
+  position: relative;
+  width: 6.2em;
+  height: 2em;
+  transition: 0.5s;
+  font-size: 17px;
+  border-radius: 0.4em;
+}
+
+.tombol p {
+  position: absolute;
+  top: 0.4em;
+  left: 1.15em;
+  margin: 0;
+  padding: 0;
+  transition: .5s;
+  color: #25D366;
+}
+
+.tombol svg {
+  position: absolute;
+  top: 0.45em;
+  right: 0.5em;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: 0.5s;
+  height: 1em;
+  fill: #fff;
+
+}
+
+.tombol:hover p {
+  left: 0.5em;
+  color: #fff
+}
+
+.tombol:hover svg {
+  opacity: 1;
+}
+
+.tombol:hover {
+  background-color: #25D366;
+}
+
+/* From Uiverse.io by alshahwan */ 
+/* From uiverse.io by @alshahwan */
+.tombol1 {
+  background-color: #fff;
+  border: 1px solid #bc2a8d;
+  padding: 5px;
+  position: relative;
+  width: 7.2em;
+  height: 2em;
+  transition: 0.5s;
+  font-size: 17px;
+  border-radius: 0.4em;
+}
+
+.tombol1 p {
+  position: absolute;
+  top: 0.4em;
+  left: 1.2em;
+  margin: 0;
+  padding: 0;
+  transition: .5s;
+  color: #bc2a8d;
+}
+
+.tombol1 svg {
+  position: absolute;
+  top: 0.45em;
+  right: 0.5em;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: 0.5s;
+  height: 1em;
+  fill: #fff
+}
+
+.tombol1:hover p {
+  left: 0.6em;
+  color: #fff
+}
+
+.tombol1:hover svg {
+  opacity: 1;
+}
+
+.tombol1:hover {
+  background-color: #bc2a8d;
+}
+.tombol, .tombol1{
+margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .home-content {
+    padding: 0 5%;
+  }
+
+  .home-content h1 {
+    font-size: 6vw;
+  }
+
+  .home-content h3 {
+    font-size: 4vw;
+  }
+
+  .home-content p {
+    font-size: 2.5vw;
+    max-width: 90%; /* Adjust text width for smaller screens */
+  }
+
+  .home-content img {
+    width: 40vw; /* Increase image size slightly on smaller screens */
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-content h1 {
+    font-size: 8vw;
+  }
+
+  .home-content h3 {
+    font-size: 6vw;
+  }
+
+  .home-content p {
+    font-size: 3.5vw;
+    max-width: 95%;
+  }
+
+  .home-content img {
+    width: 50vw; /* Increase image size slightly for small devices */
+    max-width: 150px;
+  }
+}
